@@ -15,4 +15,3 @@ lemma deMorgan : " (\<not>P \<or> \<not>Q) \<longrightarrow> \<not>( P \<and> Q)
   apply (erule notE)
   apply (erule conjE)
   apply assumption
-  done
