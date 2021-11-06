@@ -13,11 +13,11 @@ text\<open> 'blast' is invoked three times, once in the proof of each of
 lemma K1 : "\<forall> x. (P x \<and> Q x) \<Longrightarrow> (\<forall> x. P x) \<and> (\<forall> x. Q x)" 
   apply (rule conjI)
    apply (rule allI)
-   apply (erule_tac x="x" in allE)
+   apply (erule_tac x = "x" in allE)
    apply (erule conjE)
    apply assumption
   apply (rule allI)
-  apply (erule_tac x="x" in allE)
+  apply (erule_tac x = "x" in allE)
   apply (erule conjE)
   apply assumption
 
